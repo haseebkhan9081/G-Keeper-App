@@ -15,7 +15,7 @@ function App() {
   let once=true;
   let location="Earth";
 useEffect(()=>{
-  const socket = io("http://localhost:5000", {
+  const socket = io("/", {
     transports: ["websocket"], // Explicitly specify the transport method
   });
   socket.on('connect',()=>{
