@@ -19,8 +19,10 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: './public', // Directory to serve static files from
-    port: 3000, // Port to run the dev server on
+    static: {
+      directory: path.join(__dirname, '../public'),
+    },
+     port: 3000, // Port to run the dev server on
     hot: true, // Enable Hot Module Replacement (HMR)
   },
   resolve: {
