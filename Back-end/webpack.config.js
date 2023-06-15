@@ -23,4 +23,8 @@ module.exports = {
     port: 3000, // Port to run the dev server on
     hot: true, // Enable Hot Module Replacement (HMR)
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
+  
 };
