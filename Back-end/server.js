@@ -61,14 +61,17 @@ changeStream.on('change',(change)=>{
 
 
 
+const port = process.env.PORT || 5000;
+
 
 
 
 
 const server=http.createServer(app);
 const io =socketIO(server,{timeout:60000});
-server.listen(5000,'localhost',()=>{
-    console.log("server is listening on port 5000");});
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
     //when the front-end connects to the server
     let socket
 io.on("connection",(clientSocket)=>{
