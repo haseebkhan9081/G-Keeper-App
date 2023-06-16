@@ -15,7 +15,7 @@ function App() {
   let once=true;
   let location="Earth";
 useEffect(()=>{
-  const socket = io("/", {
+  const socket = io("https://keeper-app-nar6.onrender.com", {
     transports: ["websocket"], // Explicitly specify the transport method
   });
   socket.on('connect',()=>{
