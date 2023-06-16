@@ -6,7 +6,7 @@ function Footer() {
   return (
      <footer>
          <p>Made with ♥ by Haseeb Khan</p>
-     <a href="https://github.com/haseebkhan9081/Global-Keeper--MERN_APP-" style={{ color: 'inherit', textDecoration: 'none' }}>
+     <a href="https://github.com/haseebkhan9081/G-Keeper-App.git" style={{ color: 'inherit', textDecoration: 'none' }}>
      <GitHubIcon style={{ fontSize: 24, verticalAlign: 'middle', color: 'currentColor' }}/></a> 
      </footer>
      
